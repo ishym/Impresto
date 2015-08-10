@@ -5,6 +5,7 @@ using System.Net.Http;
 using System;
 using Newtonsoft.Json.Serialization;
 using System.Net.Http.Headers;
+using System.Text;
 
 namespace Impresto.Ocr.Test
 {
@@ -12,7 +13,7 @@ namespace Impresto.Ocr.Test
     {
         public static void Test1()
         {
-            string fileName = "op_front_1.jpg";
+            string fileName = "op_1_front.jpg";
 
             System.Drawing.Image imgFile = System.Drawing.Image.FromFile(fileName);
             var imageSet = new ImageSet()
@@ -37,7 +38,7 @@ namespace Impresto.Ocr.Test
                 ContractResolver = new CamelCasePropertyNamesContractResolver()
             });
            
-            //multipartContent.Add(new StringContent(imageSetJson, Encoding.UTF8, "application/json"), "imageset");
+            multipartContent.Add(new StringContent(imageSetJson, Encoding.UTF8, "application/json"), "imageset");
 
             int counter = 0;
             foreach (var img in imageSet.Images)
