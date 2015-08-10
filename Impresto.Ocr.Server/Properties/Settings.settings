@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Impresto.Ocr.Server.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SdkPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Gradient</Value>
+    </Setting>
+    <Setting Name="DetectKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DocNo</Value>
+    </Setting>
+    <Setting Name="DetectRegex" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[\d]</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
